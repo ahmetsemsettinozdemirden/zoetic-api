@@ -14,7 +14,7 @@ public class Temperature {
     private double temperature;
     private LocalDateTime date;
 
-//    public Temperature() {}
+    public Temperature() {}
 
     public Temperature(double temperature, LocalDateTime date) {
         this.temperature = temperature;

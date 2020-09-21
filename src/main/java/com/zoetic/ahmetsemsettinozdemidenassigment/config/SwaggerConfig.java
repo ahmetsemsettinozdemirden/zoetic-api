@@ -35,7 +35,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2).host(host).pathMapping(path).enable(enabled)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("digital.bigo.hotpet.server.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.zoetic.ahmetsemsettinozdemidenassigment.controller"))
                 .paths(Predicates.not(PathSelectors.regex("/_monitoring/*")))
                 .build();
     }

@@ -15,7 +15,7 @@ public class BloodPressure {
     private int diastolicPressure;
     private LocalDateTime date;
 
-//    public Blood() {}
+    public BloodPressure() {}
 
     public BloodPressure(int systolicPressure, int diastolicPressure, LocalDateTime date) {
         this.systolicPressure = systolicPressure;

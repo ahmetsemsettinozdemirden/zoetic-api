@@ -1,6 +1,11 @@
 spring:
   application:
     name: zoetic-server
+  data:
+    mongodb:
+      user: ${MONGODB_USERNAME}
+      password: ${MONGODB_PASSWORD}
+      uri: mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@hotpet.n5itf.gcp.mongodb.net/32a21d4?retryWrites=true&w=majority
 
 server:
   port: 8080
@@ -15,6 +20,11 @@ swagger:
 
 spring:
   profiles: production
+  data:
+    mongodb:
+      user: ${MONGODB_USERNAME}
+      password: ${MONGODB_PASSWORD}
+      uri: mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@hotpet.n5itf.gcp.mongodb.net/32a21d4?retryWrites=true&w=majority
 
 swagger:
   host:

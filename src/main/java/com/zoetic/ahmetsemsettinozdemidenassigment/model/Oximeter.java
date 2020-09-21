@@ -15,7 +15,7 @@ public class Oximeter {
     private int pulseRate;
     private LocalDateTime date;
 
-//    public Oximeter() {}
+    public Oximeter() {}
 
     public Oximeter(int spo2, int pulseRate, LocalDateTime date) {
         this.spo2 = spo2;
