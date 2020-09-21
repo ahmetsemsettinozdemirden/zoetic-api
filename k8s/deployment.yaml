@@ -26,6 +26,16 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: "production"
+            - name: MONGODB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-secret
+                  key: username
+            - name: MONGODB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-secret
+                  key: password
           ports:
             - name: http
               containerPort: 8080
