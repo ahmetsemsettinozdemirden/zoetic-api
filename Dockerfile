@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/bigo-digital/hotpet/server/base:latest as builder
+FROM registry.gitlab.com/zoetic-assigment/backend/base:latest as builder
 
 WORKDIR /usr/local/app
 
@@ -16,7 +16,7 @@ EXPOSE  8080
 WORKDIR /usr/local/app
 
 COPY --from=builder \
-    /usr/local/app/target/server*.jar \
+    /usr/local/app/target/ahmet-semsettin-ozdemiden-assigment*.jar \
     ./server.jar
 
 COPY ./src/main/resources ./
