@@ -24,7 +24,7 @@ spec:
           image: registry.gitlab.com/zoetic-assigment/backend:<VERSION>
           imagePullPolicy: IfNotPresent
           env:
-            - name: SPRING_PROFILE
+            - name: SPRING_PROFILES_ACTIVE
               value: "production"
           ports:
             - name: http
