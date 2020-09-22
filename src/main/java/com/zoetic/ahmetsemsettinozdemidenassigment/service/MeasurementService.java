@@ -57,9 +57,9 @@ public class MeasurementService {
         Optional<Oximeter> oximeter = oximeterRepository.findTopByDateBetweenOrderByDateDesc(startDate, endDate);
 
         // convert into transfer objects
-        TemperatureDTO temperatureDTO = temperature.map(value -> new TemperatureDTO(value.getTemperature())).orElse(null);
-        BloodPressureDTO bloodPressureDTO = bloodPressure.map(value -> new BloodPressureDTO(value.getSystolicPressure(), value.getDiastolicPressure())).orElse(null);
-        OximeterDTO oximeterDTO = oximeter.map(value -> new OximeterDTO(value.getSpo2(), value.getPulseRate())).orElse(null);
+        TemperatureDTO temperatureDTO = temperature.map(value -> new TemperatureDTO(value.getTemperature())).orElse(new TemperatureDTO());
+        BloodPressureDTO bloodPressureDTO = bloodPressure.map(value -> new BloodPressureDTO(value.getSystolicPressure(), value.getDiastolicPressure())).orElse(new BloodPressureDTO());
+        OximeterDTO oximeterDTO = oximeter.map(value -> new OximeterDTO(value.getSpo2(), value.getPulseRate())).orElse(new OximeterDTO());
         return new MeasurementDTO(temperatureDTO, bloodPressureDTO, oximeterDTO);
     }
 

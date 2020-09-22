@@ -3,19 +3,19 @@ package com.zoetic.ahmetsemsettinozdemidenassigment.dto;
 
 public class TemperatureDTO {
 
-    private double temperature;
+    private Double temperature;
 
     public TemperatureDTO() {}
 
-    public TemperatureDTO(double temperature) {
+    public TemperatureDTO(Double temperature) {
         this.temperature = temperature;
     }
 
-    public double getTemperature() {
+    public Double getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(double temperature) {
+    public void setTemperature(Double temperature) {
         this.temperature = temperature;
     }
 

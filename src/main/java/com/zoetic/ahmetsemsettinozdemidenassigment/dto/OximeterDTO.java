@@ -2,29 +2,29 @@ package com.zoetic.ahmetsemsettinozdemidenassigment.dto;
 
 public class OximeterDTO {
 
-    private int spo2;
-    private int pulseRate;
+    private Integer spo2;
+    private Integer pulseRate;
 
     public OximeterDTO(){}
 
-    public OximeterDTO(int spo2, int pulseRate) {
+    public OximeterDTO(Integer spo2, Integer pulseRate) {
         this.spo2 = spo2;
         this.pulseRate = pulseRate;
     }
 
-    public int getSpo2() {
+    public Integer getSpo2() {
         return spo2;
     }
 
-    public void setSpo2(int spo2) {
+    public void setSpo2(Integer spo2) {
         this.spo2 = spo2;
     }
 
-    public int getPulseRate() {
+    public Integer getPulseRate() {
         return pulseRate;
     }
 
-    public void setPulseRate(int pulseRate) {
+    public void setPulseRate(Integer pulseRate) {
         this.pulseRate = pulseRate;
     }
 

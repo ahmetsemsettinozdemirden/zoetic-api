@@ -2,29 +2,29 @@ package com.zoetic.ahmetsemsettinozdemidenassigment.dto;
 
 public class BloodPressureDTO {
 
-    private int systolicPressure;
-    private int diastolicPressure;
+    private Integer systolicPressure;
+    private Integer diastolicPressure;
 
     public BloodPressureDTO() {}
 
-    public BloodPressureDTO(int systolicPressure, int diastolicPressure) {
+    public BloodPressureDTO(Integer systolicPressure, Integer diastolicPressure) {
         this.systolicPressure = systolicPressure;
         this.diastolicPressure = diastolicPressure;
     }
 
-    public int getSystolicPressure() {
+    public Integer getSystolicPressure() {
         return systolicPressure;
     }
 
-    public void setSystolicPressure(int systolicPressure) {
+    public void setSystolicPressure(Integer systolicPressure) {
         this.systolicPressure = systolicPressure;
     }
 
-    public int getDiastolicPressure() {
+    public Integer getDiastolicPressure() {
         return diastolicPressure;
     }
 
-    public void setDiastolicPressure(int diastolicPressure) {
+    public void setDiastolicPressure(Integer diastolicPressure) {
         this.diastolicPressure = diastolicPressure;
     }
 }
