@@ -93,9 +93,11 @@ public class MeasurementServiceTest {
         MeasurementDTO result = measurementService.getMeasurement(null);
 
         // Then
-        assertNull(result.getTemperature());
-        assertNull(result.getBloodPressure());
-        assertNull(result.getOximeter());
+        assertNull(result.getTemperature().getTemperature());
+        assertNull(result.getBloodPressure().getDiastolicPressure());
+        assertNull(result.getBloodPressure().getSystolicPressure());
+        assertNull(result.getOximeter().getSpo2());
+        assertNull(result.getOximeter().getPulseRate());
 
         DateUtils.unfreeze();
     }
@@ -125,7 +127,8 @@ public class MeasurementServiceTest {
         assertEquals(12.3, result.getTemperature().getTemperature(), 0.00001);
         assertEquals(141, result.getBloodPressure().getSystolicPressure(), 0.00001);
         assertEquals(90, result.getBloodPressure().getDiastolicPressure(), 0.00001);
-        assertNull(result.getOximeter());
+        assertNull(result.getOximeter().getSpo2());
+        assertNull(result.getOximeter().getPulseRate());
 
         DateUtils.unfreeze();
     }
